@@ -28,12 +28,16 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Tags.MOD_ID, name = Tags.MOD_NAME, version = Tags.VERSION, dependencies =  ConstructsArmory.DEPS, acceptedMinecraftVersions = ConstructsArmory.MCVER)
+@Mod(modid = ConstructsArmory.MOD_ID, name = ConstructsArmory.MOD_NAME, version = ConstructsArmory.MOD_VERSION, dependencies = ConstructsArmory.DEPS, acceptedMinecraftVersions = ConstructsArmory.MCVER)
 public class ConstructsArmory {
     public static final String MCVER = "[1.12.2, 1.13)";
     public static final String DEPS = "required-after:mantle@[1.12-1.3.3.55,);required-after:tconstruct@[1.12.2-2.13.0.201,);after:contenttweaker@[1.12.2-4.10.0,);after:crafttweaker@[1.12-4.1.20.704,)";
 
     private static final boolean DEBUG = false;
+
+    public static final String MOD_ID = Tags.MOD_ID;
+    public static final String MOD_NAME = Tags.NAME;
+    public static final String MOD_VERSION = Tags.VERSION;
 
     @SidedProxy(clientSide = "c4.conarm.proxy.ClientProxy", serverSide = "c4.conarm.proxy.CommonProxy")
     public static CommonProxy proxy;

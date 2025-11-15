@@ -20,7 +20,6 @@
 package c4.conarm.client.gui;
 
 import c4.conarm.ConstructsArmory;
-import c4.conarm.Tags;
 import c4.conarm.common.ConfigHandler;
 import c4.conarm.common.inventory.ContainerArmorStation;
 import c4.conarm.common.inventory.SlotArmorStationIn;
@@ -78,8 +77,8 @@ import java.util.Set;
 @SideOnly(Side.CLIENT)
 public class GuiArmorStation extends GuiTinkerStation
 {
-    private static final ResourceLocation BACKGROUND = new ResourceLocation(Tags.MOD_ID, "textures/gui/armorforge.png");
-    private static final ResourceLocation ICONS = new ResourceLocation(Tags.MOD_ID, "textures/gui/icons.png");
+    private static final ResourceLocation BACKGROUND = new ResourceLocation(ConstructsArmory.MOD_ID, "textures/gui/armorforge.png");
+    private static final ResourceLocation ICONS = new ResourceLocation(ConstructsArmory.MOD_ID, "textures/gui/icons.png");
 
     private static final GuiElement TextFieldActive = new GuiElement(0, 210, 92, 12, 256, 256);
     private static final GuiElement ItemCover = new GuiElement(176, 18, 80, 64);

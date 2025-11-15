@@ -20,7 +20,6 @@
 package c4.conarm.lib.utils;
 
 import c4.conarm.ConstructsArmory;
-import c4.conarm.Tags;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -39,11 +38,11 @@ public class ConstructUtils {
         if (!name.equals(name.toLowerCase(Locale.US))) {
             throw new IllegalArgumentException(String.format("Non-lowercase unlocalized name detected! %s", name));
         }
-        return Tags.MOD_ID + "." + name;
+        return ConstructsArmory.MOD_ID + "." + name;
     }
 
     public static ResourceLocation getResource(String name) {
-        return new ResourceLocation(Tags.MOD_ID, name);
+        return new ResourceLocation(ConstructsArmory.MOD_ID, name);
     }
 
     public static <T extends Block> T registerItemBlock(IForgeRegistry<Item> registry, ItemBlock itemBlock) {
