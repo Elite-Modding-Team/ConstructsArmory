@@ -93,6 +93,10 @@
   },
   {
     "type": "armormodifier",
+    "data": "modifiers/endearment_armor.json"
+  },
+  {
+    "type": "armormodifier",
     "data": "modifiers/incognito_armor.json"
   }
 ]

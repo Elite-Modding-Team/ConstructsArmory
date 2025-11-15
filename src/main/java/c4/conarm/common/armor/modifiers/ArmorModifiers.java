@@ -186,6 +186,9 @@ public class ArmorModifiers {
         ArmoryRegistry.registerModifier(TinkerModifiers.modCreative.getIdentifier(), TinkerModifiers.modCreative);
         RecipeMatchHolder.addItem(TinkerModifiers.modCreative, TinkerCommons.matCreativeModifier, 1, 1);
 
+        ArmoryRegistry.registerModifier(TinkerModifiers.modEndearment.getIdentifier(), TinkerModifiers.modEndearment);
+        RecipeMatchHolder.addItem(TinkerModifiers.modEndearment, new ItemStack(Items.SKULL, 1, 5), 1, 1);
+
         //The modifiers being hidden is already handled by Tinkers' Antique
         //TODO: Be sure that equipped armor also has the modifier textures hidden like the items
         ArmoryRegistry.registerModifier(TinkerModifiers.modIncognito.getIdentifier(), TinkerModifiers.modIncognito);
