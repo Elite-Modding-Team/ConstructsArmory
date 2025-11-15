@@ -85,7 +85,7 @@ dependencies {
 
     // Tinkers' Antique
     implementation rfg.deobf("curse.maven:mantle-74924:2713386")
-    implementation rfg.deobf("curse.maven:tinkers-antique-1242239:6692342")
+    implementation rfg.deobf("curse.maven:tinkers-antique-1242239:7077817")
     implementation rfg.deobf("curse.maven:tinkers-tool-leveling-250957:2630860")
 
     // Runtime only (Hwyla, The One Probe)
