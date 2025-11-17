@@ -233,6 +233,31 @@ public class ModelConstructsArmor extends ModelArmorBase {
         this.bootLeftAnchor.addChild(this.bootLeft);
         this.bootRightAnchor.addChild(this.bootPlateRight);
         this.bootRightAnchor.addChild(this.bootRight);
+
+        headAnchor.showModel = slot == EntityEquipmentSlot.HEAD;
+        chestAnchor.showModel = slot == EntityEquipmentSlot.CHEST;
+        armRightAnchor.showModel = slot == EntityEquipmentSlot.CHEST;
+        armLeftAnchor.showModel = slot == EntityEquipmentSlot.CHEST;
+        pantsAnchor.showModel = slot == EntityEquipmentSlot.LEGS;
+        legLeftAnchor.showModel = slot == EntityEquipmentSlot.LEGS;
+        legRightAnchor.showModel = slot == EntityEquipmentSlot.LEGS;
+        bootLeftAnchor.showModel = slot == EntityEquipmentSlot.FEET;
+        bootRightAnchor.showModel = slot == EntityEquipmentSlot.FEET;
+        bipedHeadwear.showModel = false;
+
+        bipedHead = headAnchor;
+        bipedBody = chestAnchor;
+        bipedRightArm = armRightAnchor;
+        bipedLeftArm = armLeftAnchor;
+
+        if (slot == EntityEquipmentSlot.LEGS) {
+            bipedBody = pantsAnchor;
+            bipedLeftLeg = legLeftAnchor;
+            bipedRightLeg = legRightAnchor;
+        } else {
+            bipedLeftLeg = bootLeftAnchor;
+            bipedRightLeg = bootRightAnchor;
+        }
     }
 
     @Override
