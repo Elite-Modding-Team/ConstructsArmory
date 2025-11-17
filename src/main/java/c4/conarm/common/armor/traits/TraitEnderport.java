@@ -69,7 +69,7 @@ public class TraitEnderport extends AbstractArmorTrait {
     protected boolean teleportRandomly(EntityLivingBase entity)
     {
         double x = entity.posX + (random.nextDouble() - 0.5D) * 64.0D;
-        double y = entity.posY + (double)(random.nextInt(64) - 32);
+        double y = entity.posY + (double)(random.nextInt(128) - 64);
         double z = entity.posZ + (random.nextDouble() - 0.5D) * 64.0D;
         EnderTeleportEvent evt = new EnderTeleportEvent(entity, x, y, z, 0);
         if (MinecraftForge.EVENT_BUS.post(evt)) return false;
