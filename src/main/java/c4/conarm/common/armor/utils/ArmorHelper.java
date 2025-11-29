@@ -42,9 +42,6 @@ import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.ToolHelper;
 import slimeknights.tconstruct.tools.modifiers.ModReinforced;
 
-import static slimeknights.tconstruct.library.utils.ToolHelper.getCurrentDurability;
-import static slimeknights.tconstruct.library.utils.ToolHelper.unbreakTool;
-
 public class ArmorHelper {
 
     public static final int[] durabilityMultipliers = new int[]{13, 15, 16, 11};
@@ -136,7 +133,7 @@ public class ArmorHelper {
         NBTTagList list = TagUtil.getTraitsTagList(stack);
         for(int i = 0; i < list.tagCount(); i++) {
             ITrait trait = TinkerRegistry.getTrait(list.getStringTagAt(i));
-            if(trait != null && trait instanceof IArmorTrait) {
+            if(trait instanceof IArmorTrait) {
                 if(amount > 0) {
                     actualAmount = ((IArmorTrait) trait).onArmorDamage(stack, source, amount, actualAmount, player, slot);
                 }
@@ -150,15 +147,15 @@ public class ArmorHelper {
             actualAmount = 0;
         }
 
-        actualAmount = Math.min(actualAmount, getCurrentDurability(stack));
-        stack.setItemDamage(stack.getItemDamage() + actualAmount);
+        actualAmount = Math.min(actualAmount, ToolHelper.getCurrentDurability(stack));
+        stack.setItemDamage(Math.min(stack.getItemDamage() + actualAmount, stack.getMaxDamage()));
 
-        if(ToolHelper.getCurrentDurability(stack) == 0) {
+        if(ToolHelper.getCurrentDurability(stack) <= 0) {
             ToolHelper.breakTool(stack, player);
-            for (int i = 0; i < list.tagCount(); i++) {
+            for(int i = 0; i < list.tagCount(); i++) {
                 NBTTagCompound compound = list.getCompoundTagAt(i);
                 IModifier mod = TinkerRegistry.getModifier(compound.getString("identifier"));
-                if (mod != null && mod instanceof IArmorAbility) {
+                if(mod instanceof IArmorAbility) {
                     ModifierNBT data = ModifierNBT.readTag(compound);
                     ArmorHelper.removeArmorAbility(player, mod.getIdentifier(), ((IArmorAbility) mod).getAbilityLevel(data));
                 }
@@ -175,7 +172,7 @@ public class ArmorHelper {
     }
 
     public static void repairArmor(ItemStack stack, int amount, EntityPlayer player) {
-        unbreakTool(stack);
+        ToolHelper.unbreakTool(stack);
 
         ArmoryEvent.OnRepair.fireEvent(stack, amount);
 
