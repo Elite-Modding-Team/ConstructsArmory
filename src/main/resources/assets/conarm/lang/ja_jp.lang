@@ -1,0 +1,303 @@
+#################
+#     Config    #
+#################
+conarm.general.spawnwithbook=本を持ってスポーン
+conarm.general.spawnwithbook.tooltip=初めてワールドに入るプレイヤーに Armory Book を与えるには true に設定
+conarm.general.compactview=コンパクトGUI
+conarm.general.compactview.tooltip=Armor Station/Forge GUI の防具プレビューパネルを無効にするには true に設定
+
+conarm.general.leveling.newarmorminmodifiers=開始時の Modifier 数
+conarm.general.leveling.newarmorminmodifiers.tooltip=新しく作成された防具が持つ Modifier の数が、通常の Modifier 数よりも少ない場合、その数を減らします。
+conarm.general.leveling.maximumlevels=最大レベル
+conarm.general.leveling.maximumlevels.tooltip=達成可能な最大レベル。0 以下に設定した場合、上限はありません。
+conarm.general.leveling.basexp=基本 XP 要求量
+conarm.general.leveling.basexp.tooltip=防具に必要な基本 XP
+conarm.general.leveling.levelingmultiplier=レベルアップ乗数
+conarm.general.leveling.levelingmultiplier.tooltip=各レベルに必要な経験値を乗算する量
+conarm.general.leveling.xpgaincap=XP 獲得上限
+conarm.general.leveling.xpgaincap.tooltip=1回の被弾で獲得できる最大の XP 量
+conarm.general.leveling.damagetoxp=ダメージから XP への乗数
+conarm.general.leveling.damagetoxp.tooltip=ダメージから XP を計算するための乗数 (例: 0.25 はダメージの 25% が XP として与えられることを意味します)
+
+#################
+#     Blocks    #
+#################
+tile.conarm.armorforge.name=防具鍛造台
+tile.conarm.armorstation.name=防具作業台
+tile.conarm.soft_obsidian.name=不安定な黒曜石
+
+#################
+#     Items     #
+#################
+item.conarm.book.name=素材とあなた - Armory 追補
+item.conarm.book.tooltip=すべての Tinker に必要な本の追補\nby C4
+
+item.conarm.polishing_kit.name=研磨キット
+item.conarm.polishing_kit.tooltip=砂と組み合わせる\n防具を素材の Toughness レベルにアップグレードします。
+item.conarm.travel_belt_base.name=旅人のベルト (基本)
+item.conarm.travel_belt.name=旅人のベルト (収納)
+item.conarm.travel_potion.name=旅人のベルト (錬金術)
+item.conarm.travel_sack.name=旅人のナップサック
+item.conarm.travel_goggles_base.name=旅人のゴーグル (基本)
+item.conarm.travel_goggles.name=旅人のゴーグル (ズーム)
+item.conarm.travel_night.name=旅人のゴーグル (暗視)
+item.conarm.travel_soul.name=旅人のゴーグル (魂の視覚)
+item.conarm.travel_cloak.name=旅人のクローク (基本)
+item.conarm.travel_sneak.name=旅人のクローク (透明化)
+item.conarm.travel_slowfall.name=旅人のクローク (スローフォール)
+
+item.conarm.resist_mat.name=耐性
+item.conarm.resist_mat.tooltip=耐性 Modifier
+item.conarm.resist_mat_fire.name=火炎耐性
+item.conarm.resist_mat_fire.tooltip=火炎耐性 Modifier
+item.conarm.resist_mat_blast.name=爆発耐性
+item.conarm.resist_mat_blast.tooltip=爆発耐性 Modifier
+item.conarm.resist_mat_proj.name=投射物耐性
+item.conarm.resist_mat_proj.tooltip=投射物耐性 Modifier
+
+item.conarm.gauntlet_mat.name=ガントレット (基本)
+item.conarm.gauntlet_mat_attack.name=力のガントレット
+item.conarm.gauntlet_mat_attack.tooltip=強力な Modifier
+item.conarm.gauntlet_mat_speed.name=器用さのガントレット
+item.conarm.gauntlet_mat_speed.tooltip=器用な Modifier
+item.conarm.gauntlet_mat_reach.name=遠距離のガントレット
+item.conarm.gauntlet_mat_reach.tooltip=念力の Modifier
+
+item.conarm.invisible_ink.name=透明インク
+item.conarm.invisible_ink.tooltip=隠蔽 Modifier
+
+item.conarm.frosty_soles.name=冷たい靴底
+item.conarm.frosty_soles.tooltip=冷たい Modifier
+
+#################
+#      GUI      #
+#################
+gui.armorforge.name=防具鍛造台
+gui.armorstation.name=防具作業台
+gui.armorstation.preview=プレビュー
+
+gui.error.modifier_on_station=Modifier は防具鍛造台でのみ適用できます。
+#################
+#     Armor     #
+#################
+appearance.classic.name=クラシック
+
+item.conarm.helmet.name=ヘルメット
+item.conarm.helmet.desc=ヘルメットは危険から頭を保護します。\n視界の改善は別売です。
+item.conarm.chestplate.name=チェストプレート
+item.conarm.chestplate.desc=チェストプレートは胸部の傷や怪我を防ぐのに役立ちます。
+item.conarm.leggings.name=レギンス
+item.conarm.leggings.desc=レギンスは脚を安全に保つのに最適です。
+item.conarm.boots.name=ブーツ
+item.conarm.boots.desc=ブーツがあれば、もう二度と足の指をぶつける心配をする必要はありません。
+item.conarm.armor_trim.name=防具の縁飾り
+item.conarm.helmet_core.name=ヘルメットコア
+item.conarm.chest_core.name=チェストプレートコア
+item.conarm.leggings_core.name=レギンスコア
+item.conarm.boots_core.name=ブーツコア
+item.conarm.armor_plate.name=防具プレート
+
+#################
+#  Keybindings  #
+#################
+key.conarm.category=Construct's Armory アクセサリー
+key.conarm.toggle_boots.desc=ブーツ
+key.conarm.toggle_chest.desc=チェストプレート
+key.conarm.toggle_helm.desc=ヘルメット
+key.conarm.toggle_leg.desc=レギンス
+
+#################
+#     Traits    #
+#################
+modifier.absorbent_armor.name=吸収性
+modifier.absorbent_armor.desc=§o他のブランドよりも吸収性に優れています。§r\n水や雨の中で防具が強化されます。
+modifier.alien_armor.name=エイリアン
+modifier.alien_armor.desc=§o宇宙からの生命体。§r\n§o時間が経つにつれて徐々に進化します。§r
+modifier.ambitious_armor.name=野心的
+modifier.ambitious_armor.desc=§o栄光への道を歩んでいます！§r\n追加の XP を獲得します。
+modifier.aridiculous_armor.name=滑稽な乾燥
+modifier.aridiculous_armor.desc=§o熱を上げろ！§r\n防具は暑い環境でより良く機能します。
+modifier.aquaspeed_armor.name=水上速度
+modifier.aquaspeed_armor.desc=§o濡れてきた！§r\n防具は水に邪魔されず、雨の夕方を好みます。
+modifier.autoforge_armor.name=自動鍛造
+modifier.autoforge_armor.desc=§oとても熱いので、自分で直ります！§r\n防具は火の中で自己修復します。
+modifier.baconlicious_armor.name=ベーコン好き
+modifier.baconlicious_armor.desc=§oベーコン！§r\n攻撃を受けると、時々ベーコンが出ます。
+modifier.blessed_armor.name=祝福
+modifier.blessed_armor.desc=§oアンデッドよ、用心せよ。§r\n接触時にアンデッドを弱体化させます。
+modifier.bouncy_armor.name=弾む
+modifier.bouncy_armor.desc=§oいつでもバウンスハウス！§r\n防具は跳ね回る傾向があります。
+modifier.calcic_armor.name=カルシウム質
+modifier.calcic_armor.desc=§oより強い骨のために。§r\n牛乳はあなたとあなたの防具の両方を若返らせます。
+modifier.cheap_armor.name=安価
+modifier.cheap_armor.desc=§oお値段以上の価値！§r\n防具を修理したときに得られる耐久度が増加します。
+modifier.cheapskate_armor.name=けちん坊
+modifier.cheapskate_armor.desc=§o模倣品かも！§r\n石は良くありません。
+あなたの防具は耐久度が少なくなります。
+modifier.combustible_armor.name=可燃性
+modifier.combustible_armor.desc=§oこの防具は燃えている！§r\n着火すると周囲の生物に火をつけます。
+modifier.dense_armor.name=高密度
+modifier.dense_armor.desc=§o硬い...より硬く。§r\n耐久度が少ないほど、防具は長持ちします。
+modifier.desperation_armor.name=必死
+modifier.desperation_armor.desc=§o誤報だ！§r\n体力が最大体力の半分未満になると、防具が強化されます。
+modifier.depth_explorer_armor.name=深部探検家
+modifier.depth_explorer_armor.desc=§o核への旅！§r\n地下深くにいる間、防具が強化されます。
+modifier.dramatic_armor.name=ドラマティック
+modifier.dramatic_armor.desc=§oなんて衝動だ！§r\nピンチの時に助けてくれるかも？
+さあ、どうでしょう！
+modifier.duritos_ranch_armor.name=ドリトスランチ
+modifier.duritos_ranch_armor.desc=§o聞こえるほど美味しくはない。§r\nあなたの防具はより長く持ちます...たいていは。
+modifier.ecological_armor.name=エコロジー
+modifier.ecological_armor.desc=§o母なる自然に感謝。§r\n§o防具は自然なものに対してより良い保護を提供します。§r
+modifier.enderport_armor.name=エンダーポート
+modifier.enderport_armor.desc=§o間に合った！§r\n危険な状況からテレポートで抜け出す可能性があります。
+modifier.featherweight_armor.name=羽のように軽い
+modifier.featherweight_armor.desc=§o羽のように軽い。§r\nとても軽いので、落下ダメージが軽減されます。
+modifier.heavy_armor.name=重い
+modifier.heavy_armor.desc=§o持ち上げられるの？§r\nノックバックを抑制します。
+modifier.indomitable_armor.name=不屈
+modifier.indomitable_armor.desc=§o決して諦めない！§r\nあなたの防具をより効果的にします。
+modifier.infernal_armor.name=地獄
+modifier.infernal_armor.desc=§o悪魔的なファッションの最新作。§r\nネザー以外のモブからの追加保護。
+modifier.infernal_armor.extra=対ネザー以外: +%s
+modifier.invigorating_armor.name=活気づける
+modifier.invigorating_armor.desc=§oこれは素晴らしい気分！§r\nどういうわけか、より健康に感じます。
+modifier.lightweight_armor.name=軽量
+modifier.lightweight_armor.desc=§o風のように速い！§r\n全体の移動速度が向上します。
+modifier.lightweight_armor.extra=ボーナス速度: +%s
+modifier.magnetic_armor.name=磁気
+modifier.magnetic_armor.desc=§o魅力的な防具！§r\nアイテムはあなたに引き寄せられずにはいられません。
+modifier.mundane_armor.name=平凡
+modifier.mundane_armor.desc=§o武器は弱虫のためのものだ！§r\n非武装の攻撃者からのボーナス保護。
+modifier.mundane1_armor.extra=対非武装: +%s
+modifier.petravidity_armor.name=石好き
+modifier.petravidity_armor.desc=§oこんなにたくさんの石、全部見なければ！§r\nあなたの防具は石が大好きで、その周りでより良く機能します。
+modifier.prideful_armor.name=プライド
+modifier.prideful_armor.desc=§oナルシシズムとは？§r\n攻撃を受けた後、耐久度を犠牲にしてより頑丈になります。
+modifier.rough_armor.name=粗い
+modifier.rough_armor.desc=§o触れないでください。§r\n耐久度に基づいて接触時に攻撃者にダメージを与えます。
+modifier.rough_armor.extra=粗いダメージ: +%s
+modifier.shielding_armor.name=防御
+modifier.shielding_armor.desc=§oもうそんなに特別じゃないでしょ？§r\n魔法の攻撃からの追加保護。
+modifier.slimey_armor.name=スライム質
+modifier.slimey_armor.desc=§oべとべと！§r\n§o着地時、近くにいるクリーチャーを遅くします。§r
+modifier.skeletal_armor.name=骨格
+modifier.skeletal_armor.desc=§o骨のように...頑丈？§r\nあなたの防具をより頑丈にします。
+modifier.spiny_armor.name=とげとげ
+modifier.spiny_armor.desc=§oそれはスパインと呼ばれ、スパイクではありません！§r\nダメージを受けると、耐久度を犠牲にして攻撃者にダメージを与えます。
+modifier.steady_armor.name=安定
+modifier.steady_armor.desc=§o踏ん張れ！§r\nあなたはノックバックが少なくなり、攻撃者には多くなります。
+modifier.subterranean_armor.name=地下
+modifier.subterranean_armor.desc=§oもっと深く行かなければ！§r\nあなたの防具は海面下でより耐久性が高くなります。
+modifier.superhot_armor.name=スーパーホット
+modifier.superhot_armor.desc=§oスーパー。 ホット。§r\n火傷しているときに速く走れます！
+modifier.tasty_armor.name=美味しい
+modifier.tasty_armor.desc=§oむしゃむしゃ§r\nとても良い匂い...飢えるくらいなら防具を食べたいと思うでしょう。
+modifier.vengeful_armor.name=復讐心
+modifier.vengeful_armor.desc=§o彼らはこれの代償を払うでしょう！§r\nあなたの攻撃者はあなたを攻撃した後、気分が良くないかもしれません。
+modifier.voltaic_armor.name=ボルタ電撃
+modifier.voltaic_armor.desc=§oビリビリ！§r\n攻撃を受けると防具が充電されます。
+完全に充電されたら、もう一度攻撃を受けて放電し、周囲のすべての生物にダメージを与えます。
+#################
+#   Modifiers   #
+#################
+modifier.amphibious_armor.name=両生類
+modifier.amphibious_armor.desc=§o水中ファッション。§r\n限られた時間、水中で呼吸できます。
+modifier.amphibious_armor.extra=貯蔵酸素: %d
+modifier.blast_resistant_armor.name=爆発耐性
+modifier.blast_resistant_armor.desc=§o隠れろ！§r\n爆発からの追加保護。
+modifier.concealed_armor.name=隠蔽
+modifier.concealed_armor.desc=§o何を着ているの？§r\nあなたの防具は目に見えなくなります。
+modifier.diamond_armor.name=ダイヤモンド
+modifier.diamond_armor.desc=§oいつまでも輝く。§r\n§o修理したときに多くの耐久度を得る。§r
+modifier.dexterous_armor.name=器用
+modifier.dexterous_armor.desc=§o最も軽快な手。§r\n攻撃速度が向上します。
+modifier.emerald_armor.name=エメラルド
+modifier.emerald_armor.desc=§oお金は世界を回す。§r\n§oエメラルドは、防具の経験値を倍増させます。§r
+modifier.extratrait_armor.name=追加特性
+modifier.extratrait_armor.desc=§oそれだけでは不十分だ！§r\n§o防具が 2 つの Trait を獲得できるようにします。§r
+modifier.fire_resistant_armor.name=火炎耐性
+modifier.fire_resistant_armor.desc=§o焼身は良くない。§r\n火からの追加保護。
+modifier.frostwalker_armor.name=冷たい
+modifier.frostwalker_armor.desc=§oいつも冷静でいよう。§r\nあなたの足はとても冷たいので、周囲の水を凍らせます。
+modifier.glowing_armor.name=輝く
+modifier.glowing_armor.desc=§o明るく輝け§r\n暗くなりすぎると、あなたのブーツは道​​を照らすために自分の一部を犠牲にします。
+modifier.high_stride_armor.name=ハイストライド
+modifier.high_stride_armor.desc=§oジャンプは野蛮人のためのもの。§r\nより高い段差を歩いて登ることができます。
+modifier.incognito_armor.name=匿名
+modifier.incognito_armor.desc=§o洗い流された！§r\nすっきりとした見た目のために Modifier を非表示にします。
+modifier.mending_armor.name=修繕の苔
+modifier.mending_armor.desc=§o生きている！§r\n拾った XP が防具に蓄積されます。ゆっくりと XP を消費して耐久度を回復します。
+modifier.mending_armor.extra=蓄積 XP: %d
+modifier.parasitic_armor.name=寄生
+modifier.parasitic_armor.desc=§o永遠に一緒だ...§r\nあなたの防具はあなたを餌にして自分自身を修理します。
+modifier.polished_armor.name=研磨済み
+modifier.polished_armor.desc=§o光沢があるほど良い！§r\nToughness が %s と同じレベルに増加します。
+modifier.powerful_armor.name=強力
+modifier.powerful_armor.desc=§o俺のこの手が真っ赤に燃える...いや、白っぽいな§r\n攻撃ダメージが増加します。
+modifier.projectile_resistant_armor.name=投射物耐性
+modifier.projectile_resistant_armor.desc=§oもっと近づけ、臆病者め！§r\n投射物攻撃からの追加保護。
+modifier.reinforced_armor.name=強化
+modifier.reinforced_armor.desc=§oより硬く。§r\n§o耐久度が消費されるのを防ぎます。§r
+modifier.reinforced_armor.extra=強化: %s
+modifier.resistant_armor.name=耐性
+modifier.resistant_armor.desc=§oより硬く、より強く！§r\nすべての攻撃からの追加保護。
+modifier.shulkerweight_armor.name=シュルカー級
+modifier.shulkerweight_armor.desc=§o見ろ、空を！§r\nジャンプ力が向上します。
+modifier.soulbound_armor.name=ソウルバウンド
+modifier.soulbound_armor.desc=§o仲の良い二人！§r\nあなたはあなたの防具を愛しています。死さえもあなたたちを引き裂くことはできません。
+modifier.speedy_armor.name=加速
+modifier.speedy_armor.name2=超加速
+modifier.speedy_armor.name3=最加速
+modifier.speedy_armor.desc=§o速く行け！§r\n全体の移動速度が向上します。
+modifier.speedy_armor.extra=ボーナス速度: +%s
+modifier.sticky_armor.name=粘着
+modifier.sticky_armor.desc=§o取れ、取れ！§r\nあなたを攻撃する者を誰でも遅くします。
+modifier.telekinetic_armor.name=念力
+modifier.telekinetic_armor.desc=§oもはや現実に縛られない。§r\nより遠くまで手が届くようになります。
+#################
+#  Accessories  #
+#################
+modifier.travel_belt_armor.name=旅人のベルト (収納)
+modifier.travel_belt_armor.desc=§o筋力トレーニング！§r\n2 番目のホットバーを与えます。
+modifier.potion_belt_armor.name=旅人のベルト (錬金術)
+modifier.potion_belt_armor.desc=§oポーション愛好家のために。§r\n特別なポーション収納を与えます。
+modifier.travel_sack_armor.name=旅人のナップサック
+modifier.travel_sack_armor.desc=§o貴重品をまとめておこう！§r\n2 番目の収納スペースを与えます。
+modifier.travel_sneak_armor.name=旅人のクローク (透明化)
+modifier.travel_sneak_armor.desc=§oこそこそ、こそこそ〜§r\n透明化を付与します。
+modifier.travel_slowfall_armor.name=旅人のクローク (スローフォール)
+modifier.travel_slowfall_armor.desc=§o風に乗せて。§r\n落下速度が大幅に遅くなります。
+modifier.travel_goggles_armor.name=旅人のゴーグル (ズーム)
+modifier.travel_goggles_armor.desc=§o防具をまっすぐ通り抜けて。§r\n遠くの景色をズームインできます。
+modifier.night_vision_armor.name=旅人のゴーグル (暗視)
+modifier.night_vision_armor.desc=§o私は夜だ。§r\n暗闇でも見ることができます。
+modifier.soul_sight_armor.name=旅人のゴーグル (魂の視覚)
+modifier.soul_sight_armor.desc=§o心臓は偉大な力だ。§r\n近くの生物の魂を見ることができます。
+accessory.head.tooltip=ヘルメットアクセサリー
+accessory.chest.tooltip=チェストプレートアクセサリー
+accessory.legs.tooltip=レギンスアクセサリー
+accessory.feet.tooltip=ブーツアクセサリー
+accessory.toggle.tooltip=ステータス: %s
+accessory.toggle.active=有効
+accessory.toggle.inactive=無効
+
+#################
+#     Stats     #
+#################
+stat.core.name=コア
+stat.core.durability.name=耐久度
+stat.core.durability.desc=耐久度計算の基本乗数値。\n通常、防具全体の耐久度にとって不可欠な部分です。
+stat.core.defense.name=防御力
+stat.core.defense.desc=素材が持つ防御力の量。\n防具は防御力と防具スロットの両方に依存します。
+stat.plates.name=プレート
+stat.plates.modifier.name=Modifier
+stat.plates.modifier.desc=防具素材が防具プレートとしてどれだけ適しているか。\n防具の合計耐久度がこれで乗算されます。
+stat.plates.durability.name=耐久度
+stat.plates.durability.desc=素材がどれだけうまく着用できるか。\n防具の耐久度乗数がこの量だけ変更されます。
+stat.plates.toughness.name=タフネス
+stat.plates.toughness.desc=防具が持つタフネスポイントの数。
+
+stat.trim.name=縁飾り
+stat.trim.durability.name=耐久度
+stat.trim.durability.desc=縁飾りが防具の耐久度乗数をどれだけ変更するか。
